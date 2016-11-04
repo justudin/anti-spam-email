@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Anti-Spam Email Link OBFUSCATOR</title>
+</head>
+<body>
+<font face="verdana,tahoma,arial,sans-serif" size="2">
+<center>
+<font size="3"><b>ANTI-SPAM EMAIL LINK OBFUSCATOR</b></font><br><br>
+Spam bots are getting a lot smarter at harvesting email addresses from web pages<br>
+but I don't think they'll find a way around this Javascript encoder any time soon!<br><br>
+<form name="mungeForm" action="">
+<b>Email address: </b><input type="text" name="emailInput" value="" / size="35">&nbsp;&nbsp;<b>Link text: </b> <input type="text" name="linkInput" value="">&nbsp;&nbsp;<input type="button" onclick="munge()" value="Generate Javascript" /><br>
+<font size="1"><b>Note:</b> Just leave the '<b>Link text</b>' field blank if you want your email address be the link text (also <b>encrypted</b>).</font><br>
+</form>
+<form name="output" action="">
+<textarea name="source" id="code" rows="26" cols="80">
+</textarea>
+</form>
+<button class="btn" id="copybtn">Copy source code</button><br/><br/>
+<font size="1">This tool was originally conceived and written by Tim Williams of <a href="http://www.u.arizona.edu/~trw/spam/spam4.htm" target="_blank">The University of Arizona</a>. The code to randomly <br>generate a different encryption key each time the tool is used was written by Andrew Moulden of <a href="http://www.siteengineering.com" target="_blank">Site Engineering Ltd</a>.<br>
+Ross Killen of <a href="http://www.celticproductions.net/articles/10/email/php+email+obfuscator.html" target="_blank">Celtic
+Productions Ltd</a> has also created a PHP version to enable use of this technique in web applications.<br><br>
+<b>This code is distributed as freeware, provided the authors' credits etc remain exactly as shown.</b></font><br><br>
+<a href="http://www.justudin.com">www.justudin.com</a><br>
+</center>
+</body>
+<script src="encrypt.js"></script>
+</html>
